@@ -15,28 +15,52 @@ body{
 
 }
 
+
 div{
 	display: block;
 }
 	
-#gooHead{
+header{
 	background-color: aqua;
-	postion: absolute;
-	top: -295px;
-	right:0;
 	width: 100%;
 	font-size:13px;
+	
 
 }
 
-.gooTop{
-
-
+nav{
+	position: relative;
+	top: 10px;
+	left: 80%;
+	display: inline-block;
 }
 
- #gooW{
- 	display: none;
- }
+
+nav a:link {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+
+
+nav a:visited {
+    
+}
+
+
+nav a:hover {
+    opacity: .85;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+
+nav a:active {
+    }
+
+
+
 
 
 </style>
@@ -45,18 +69,23 @@ div{
 
 <body>
 
-<div id="gooHead" class="gooTop">
-  <div id="gooW">
-    <div style="top:0; left: 0; right: 0; width: 100%">
-      <div class="">
-      	
-      </div>
-    </div>
-  </div>
+<div class="wrapper">
+
+<header>
+  <nav>
+  	<a href="#">Gmail</a>
+  	<a href="#">Images</a>
+   
+  	<a href="https://www.google.com.au/intl/en/options/"><img src="images/apps.png"></a>
+  	<a href="#"><img src="images/bell.png"></a>
+  	<a href="#"><img src="images/avatar.png"></a>
+    
+  </nav>
+  
+</header>
+
+
 </div>
-
-
-
 
 </body>
 
