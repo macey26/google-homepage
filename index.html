@@ -99,9 +99,35 @@ nav a:active {
 
 }
 
+#box{
+	position: relative;
+	top:180px;
+	left: 350px;
+	width: 632px;
+	height: 49px;
+	border: 1px solid lightgrey;
+	box-shadow: 2px 2px 5px grey;
+	min-width: 484px;
+}
+
+input{
+	-webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: auto;
+    border: none;
+}
+
+#mic{
+	float: right;
 
 }
 
+#search{
+  width: 448px;
+  height: 44px
+
+}
 
 
 </style>
@@ -127,6 +153,12 @@ nav a:active {
 </header>
 <section>
   	<img src="images/googlelogo_color.png" id="logo">
+
+  	<div id="box"> 
+   <input type="text" name="search" title="search" id="search">
+   <input type="image" src="images/mic.png" alt="Submit" id="mic">
+
+  	</div>
 
 
 
