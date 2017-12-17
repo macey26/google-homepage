@@ -120,13 +120,66 @@ input{
 
 #mic{
 	float: right;
+	margin: 5px 0 0 5px;
 
 }
 
 #search{
   width: 448px;
-  height: 44px
+  height: 44px;
+  font-size: 25px;
+  
+}
 
+#searchBox{
+	position: absolute;
+    top: 150px;
+	width:980px;
+	height: 129px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#googleSearch{
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    top: 200px ;
+    left: 515px;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+
+}
+
+#feelLucky{
+	height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    top: 200px ;
+    left: 515px;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
 }
 
 
@@ -154,12 +207,18 @@ input{
 <section>
   	<img src="images/googlelogo_color.png" id="logo">
 
+  <div id="searchBox">
   	<div id="box"> 
-   <input type="text" name="search" title="search" id="search">
-   <input type="image" src="images/mic.png" alt="Submit" id="mic">
-
+  	<form>
+     <input type="text" name="search" title="search" id="search">
+     <input type="image" src="images/mic.png" alt="Submit" id="mic">
+    </form>
   	</div>
-
+  	 <form>
+  	 	<input value="Google Search" type="submit" name="Google search" aria-label="Google Search" id="googleSearch">
+  	 	<input value="I'm Feeling Lucky" type="submit" name="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="feelLucky">
+  	 </form>
+  </div>
 
 
   </section>
